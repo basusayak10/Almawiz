@@ -1,0 +1,16 @@
+{
+  "name": "almawiz",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "pdf-parse": "^1.1.1",
+    "pdfjs-dist": "^2.5.207"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "sayak basu",
+  "license": "ISC"
+}
