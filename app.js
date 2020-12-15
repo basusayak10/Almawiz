@@ -1,6 +1,8 @@
 const fs = require('fs');
 const pdfparse = require ('pdf-parse');
-const document = fs.readFileSync('Literature_300.pdf'); //Only field we need to change depending on pdf file name
+const readline = require('readline-sync');
+const fileName = readline.question("What PDF file would you like to extract? ");
+const document = fs.readFileSync(fileName);
 
 pdfparse(document).then((data) => {
         var str = "";
