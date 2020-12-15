@@ -12,6 +12,7 @@ pdfparse(document).then((data) => {
         var conclusionArr = ["CONCLUSION", "Conclusion"];
         var referenceArr = ["References", "REFERENCES"];
         var startAbstract = 0, endAbstract = 0, startCase = 0, endCase = 0, lengthCase = 0, startDiscussion = 0, endDiscussion = 0, lengthDiscussion = 0, startConclusion = 0, endConclusion = 0;
+        obj.file_name = fileName;
         obj.title = data.info.Title;
         str = data.text;
         for (var a = 0; a < abstractArr.length; a++) {
@@ -58,6 +59,7 @@ pdfparse(document).then((data) => {
 
 var obj = 
 {
+        file_name: "",
         title: "",
         abstract: "",
         case: "",
